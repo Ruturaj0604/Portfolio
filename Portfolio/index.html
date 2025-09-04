@@ -2,6 +2,59 @@
 <html lang="en">
 
 <head>
+
+
+  <style>
+    /* body.dark-mode .navbar-nav .nav-link:hover,
+    body.dark-mode .navbar-nav .nav-link:focus,
+    body.dark-mode .navbar-nav .nav-link.active {
+      color: #FFD580 !important;
+      background: #222 !important;
+      border-radius: 8px;
+    }
+    body.dark-mode .navbar-toggler {
+      background: #222 !important;
+      border-radius: 6px;
+    } */
+    /* body.dark-mode .navbar-toggler-icon {
+      filter: invert(1);
+    } */
+    /* Color mode toggle always visible on mobile */
+    @media (max-width: 400px) {
+      .ml-lg-4 {
+        display: flex !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .color-mode {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      body.dark-mode .navbar-collapse {
+        background: #181818 !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+      }
+
+      body.dark-mode .navbar-nav .nav-link,
+      body.dark-mode .navbar-nav .nav-link span {
+        color: #FFA500 !important;
+        font-weight: 600;
+        background: transparent !important;
+        transition: color 0.2s;
+      }
+
+      .close-icon {
+        color: #fff !important;
+        /* For font icons */
+        fill: #fff !important;
+        /* For SVG icons */
+      }
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -105,57 +158,76 @@
         </div>
 
         <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg">
+          <div class="about-image svg" style="display:flex;justify-content:center;align-items:center;">
             <img src="images/Ruturaj.png" class="img-fluid" alt="svg image"
               style="width: 380px; height: 380px; border-radius: 60%; margin-left: 80px;">
           </div>
-        </div>
+          <style>
+            @media (max-width: 400px) {
+              .timeline-info p {
+                font-size: 0.95em !important;
+                word-break: break-word !important;
+                overflow-wrap: break-word !important;
+                max-width: 100vw !important;
+                white-space: normal !important;
+              }
+            }
 
-      </div>
-    </div>
+            @media (max-width: 400px) {
+              .timeline-info span {
+                font-size: 1em !important;
+              }
+
+              .job-title {
+                font-size: 0.7em !important;
+                word-break: break-word !important;
+                overflow-wrap: break-word !important;
+                max-width: 100vw !important;
+              }
+            }
+
+            @media (max-width: 767px) {
+              .about-image.svg {
+                justify-content: center !important;
+                align-items: center !important;
+              }
+
+              .about-image.svg img {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                display: block;
+                margin: 0 auto;
+              }
+            }
+          </style>
   </section>
 
-  <!-- PROJECTS -->
   <section class="project py-0" id="project">
     <div class="container">
-
       <div class="row">
         <div class="col-lg-11 text-center mx-auto col-12">
-
           <div class="col-lg-8 mx-auto">
-            <h2>Projects i Done in my Academic year</h2>
-          </div>
-          <br>
+            <h2>Projects I Done in my Academic year</h2>
+          </div><br>
           <div class="owl-carousel owl-theme">
             <div class="item">
-              <div class="project-info">
-                <img src="images/pro1.png" class="img-fluid" alt="project image">
-              </div>
+              <div class="project-info"><img src="images/pro1.png" class="img-fluid" alt="project image"></div>
             </div>
-
             <div class="item">
-              <div class="project-info">
-                <img src="images/pro2.png" class="img-fluid" alt="project image">
-              </div>
+              <div class="project-info"><img src="images/pro2.png" class="img-fluid" alt="project image"></div>
             </div>
-
             <div class="item">
-              <div class="project-info">
-                <img src="images/pro3.png" class="img-fluid" alt="project image">
-              </div>
+              <div class="project-info"><img src="images/pro3.png" class="img-fluid" alt="project image"></div>
             </div>
-            <!-- <div class="item">
-                          <div class="project-info">
-                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div> -->
+            <div class="item">
+              <div class="project-info"><img src="images/project/project-image05.png" class="img-fluid"
+                  alt="project image"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Skill Section -->
   <section class="skill py-0" id="skills">
     <div class="inner">
       <div class="header">
@@ -165,9 +237,8 @@
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
-              <div style="background:#fff;border-radius:12px;padding:16px;display:inline-block;text-align:center; ">
-                <img src="images/Icon/React.jpeg" alt="React JS"
-                  style="width:80px;display:block;margin:0 auto 8px auto;">
+              <div style="background:#fff;border-radius:12px;padding:16px;display:inline-block;text-align:center; "><img
+                  src="images/Icon/React.jpeg" alt="React JS" style="width:80px;display:block;margin:0 auto 8px auto;">
                 <div style="font-family:'Times New Roman',serif;font-weight:700;font-size:1.3em;color:#222;">React</div>
               </div>
             </div>
@@ -187,7 +258,6 @@
           </div>
           <p></p>
         </div>
-
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
@@ -200,7 +270,6 @@
           </div>
           <p></p>
         </div>
-
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
@@ -214,7 +283,6 @@
           </div>
           <p></p>
         </div>
-
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
@@ -228,7 +296,6 @@
           </div>
           <p></p>
         </div>
-
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
@@ -241,7 +308,6 @@
           </div>
           <p></p>
         </div>
-
         <div class="skill-box">
           <div class="skill-title">
             <div class="img" style="width: max-content; height: max-content;">
@@ -255,14 +321,10 @@
           </div>
           <p></p>
         </div>
-
-
-
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
   <section class="experience py-5 d-lg-flex justify-content-center align-items-center" id="experience">
     <div class="container">
       <div class="row">
@@ -272,17 +334,42 @@
             <div style="min-width:320px;max-width:400px;flex:1;">
               <div class="timeline">
                 <div class="timeline-wrapper">
-                  <div class="timeline-yr">
-                    <span>2024</span>
-                  </div>
+                  <div class="timeline-yr"><span>2024</span></div>
                   <div class="timeline-info">
                     <h3 style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-                      <span style="display:block;">ArthaVedh Consulting Pvt Ltd</span>
-                      <small
-                        style="display:block; font-size:0.7em; font-weight:400; color:#444; margin-left:0; margin-top:2px;">Associate
-                        Software Engineer (UI Developer, On-site)</small>
+                      <div style="display:block;width:100%;"><span style="display:block;width:100%;">ArthaVedh
+                          Consulting Pvt Ltd</span><small class="job-title"
+                          style="display:block;width:100%;margin-left:0;">Associate Software Engineer (UI Developer,
+                          On-site)</small></div>
+                      <style>
+                        .job-title {
+                          display: block;
+                          font-size: 0.85em;
+                          /* font-weight: 200; */
+                          /* color: #bfbdbd; */
+                          margin-left: 0;
+                          margin-top: 2px;
+                          margin-bottom: 5px;
+                          line-height: 1.2;
+                          letter-spacing: 0.01em;
+                          text-align: left;
+                          white-space: normal !important;
+                          word-break: break-word !important;
+                          overflow-wrap: break-word !important;
+                          max-width: 100% !important;
+                        }
+
+                        @media (max-width: 767px) {
+                          .job-title {
+                            font-size: 1em;
+                            margin-top: 4px;
+                            text-align: left;
+                            max-width: 100vw;
+                          }
+                        }
+                      </style>
                     </h3>
-                    <p>March 2024 – Present (1.5 years)<br>Pune, Maharashtra</p>
+                    <p>March 2024 – Present <br>(1.5 years)<br>Pune, Maharashtra</p>
                   </div>
                 </div>
               </div>
@@ -304,13 +391,42 @@
                     extra API calls, and optimizing rendering.</span></li>
                 <li><span class="experience-text">&#8226; Worked in Agile/Scrum teams, joining sprint planning, daily
                     standups, code reviews, and deploying projects through CI/CD pipelines with Git.</span></li>
-
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <style>
+      @media (max-width: 991px) {
+        .experience .d-flex {
+          flex-direction: column !important;
+          gap: 0 !important;
+        }
+
+        .experience .timeline,
+        .experience [style*="flex:2"] {
+          max-width: 100% !important;
+          min-width: 0 !important;
+        }
+
+        .experience ul {
+          margin-left: 0 !important;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .experience {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        .experience .container {
+          padding-left: 8px !important;
+          padding-right: 8px !important;
+        }
+      }
+    </style>
   </section>
 
   <!-- Education -->
@@ -418,10 +534,19 @@
         <div class="col-lg-5 mr-lg-5 col-12">
           <div class="google-map w-100">
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7638.711766572503!2d74.57269066876633!3d16.808691986921602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc118b8f4b8a0fd%3A0x6e2314f5e85831!2sAnkali%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708494398512!5m2!1sen!2sin"
-              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div style="width:100%;position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7638.711766572503!2d74.57269066876633!3d16.808691986921602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc118b8f4b8a0fd%3A0x6e2314f5e85831!2sAnkali%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708494398512!5m2!1sen!2sin"
+                style="border:0;position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- <style>
+              @media (max-width: 767px) {
+                .google-map {
+                  margin-bottom: 24px;
+                }
+              }
+            </style> -->
           </div>
 
           <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
@@ -430,21 +555,39 @@
               <p class="footer-text mb-0">8080345211</p>
               <p><a href="mailto:hello@company.co">ruturajshinde2003@gmail.com</a></p>
             </div>
-
             <ul class="social-links">
               <!-- GitHub icon -->
               <li><a href="https://github.com/Rutu2003" target="_blank"><i class="fab fa-github"
                     aria-hidden="true"></i></a></li>
-
               <!-- LinkedIn icon -->
               <li><a href="https://www.linkedin.com/in/ruturaj-shinde-profile/" target="blank"><i
                     class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-
               <!-- Instagram icon -->
               <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-
-              </li>
             </ul>
+            <style>
+              @media (max-width: 767px) {
+                .contact-info {
+                  flex-direction: column !important;
+                  align-items: flex-start !important;
+                  gap: 16px;
+                  margin-top: 20px !important;
+                }
+
+                .contact-info .social-links {
+                  margin-top: 12px;
+                  margin-bottom: 0;
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  padding-left: 0;
+                }
+
+                .contact-info .social-links li {
+                  margin: 0 10px;
+                }
+              }
+            </style>
           </div>
         </div>
 
