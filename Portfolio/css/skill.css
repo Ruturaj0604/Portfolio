@@ -87,16 +87,6 @@
     margin-left: 8rem;
     transform: .5s;
 }
-.img :after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 90px;
-    background:rgba(100, 100, 100, 0.5);
-    border-radius: 45px 0 0 45px;
-}
 .skill-title h3{
     color: #fff;
     margin-top: 0.5rem;
