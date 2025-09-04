@@ -349,6 +349,15 @@ b, strong {
 	.color-mode {
 		color: $text-white;
 	}
+
+	.experience,
+	.experience * {
+		color: $text-white !important;
+	}
+	.experience-text,
+	.experience-text * {
+		color: $text-white !important;
+	}
 	.owl-carousel {
 		.owl-nav button.owl-next,
 		.owl-nav button.owl-prev,
