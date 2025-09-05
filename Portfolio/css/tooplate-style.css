@@ -116,10 +116,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #ffc200;
-}
-
-.animated-item {
+  color: #6c63ff;
   font-size: 38px;
   line-height: inherit;
   display: block;
@@ -130,6 +127,7 @@ b, strong {
   right: 0;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
+  text-shadow: 0 2px 8px rgba(108,99,255,0.08);
 }
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
@@ -436,16 +434,17 @@ b, strong {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
-  border-radius: 50px;
+background: #474559;
   color: #ffffff;
+  border-radius: 50px;
   font-weight: bold;
   border: 0;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 .contact-form .submit-btn:hover {
-  background: #474559;
+   background: #ffc200;
+  color: #ffffff !important;
 }
 
 .contact-info {
@@ -479,9 +478,7 @@ b, strong {
     padding-bottom: 4rem;
   }
 
-  .color-mode {
-    display: none;
-  }
+  /* .color-mode is now always visible in the navbar */
 
   .about-image {
     margin-top: 4em;
