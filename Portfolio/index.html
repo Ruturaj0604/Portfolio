@@ -199,6 +199,21 @@
                 margin: 0 auto;
               }
             }
+             .about-lottie {
+              width: 340px;
+              height: 340px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: transparent;
+            }
+            @media (max-width: 600px) {
+              .about-lottie {
+                width: 220px;
+                height: 220px;
+              }
+            }
           </style>
   </section>
 
@@ -556,14 +571,22 @@
               <p><a href="mailto:hello@company.co">ruturajshinde2003@gmail.com</a></p>
             </div>
             <ul class="social-links">
-              <!-- GitHub icon -->
-              <li><a href="https://github.com/Rutu2003" target="_blank"><i class="fab fa-github"
-                    aria-hidden="true"></i></a></li>
-              <!-- LinkedIn icon -->
-              <li><a href="https://www.linkedin.com/in/ruturaj-shinde-profile/" target="blank"><i
-                    class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-              <!-- Instagram icon -->
-              <li><a href="#" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              <!-- Animated Social Media Icons -->
+              <li>
+                <a href="https://github.com/Rutu2003" target="_blank">
+                  <i class="fab fa-github icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ruturaj-shinde-profile/" target="_blank">
+                  <i class="fab fa-linkedin-in icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram icon"></i>
+                </a>
+              </li>
             </ul>
             <style>
               @media (max-width: 767px) {
@@ -573,7 +596,6 @@
                   gap: 16px;
                   margin-top: 20px !important;
                 }
-
                 .contact-info .social-links {
                   margin-top: 12px;
                   margin-bottom: 0;
@@ -581,11 +603,87 @@
                   justify-content: center;
                   width: 100%;
                   padding-left: 0;
+                  margin-left: 0;
+                  max-width: 100%;
                 }
-
                 .contact-info .social-links li {
-                  margin: 0 10px;
+                  margin: 0 4px;
                 }
+                .contact-info .social-links li a {
+                  width: 40px;
+                  height: 40px;
+                  font-size: 18px;
+                  line-height: 40px;
+                }
+              }
+
+              /* Animated Social Media Icon Styles */
+              .social-links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0;
+                position: relative;
+                transform: none;
+                padding-left: 0;
+                margin: 0;
+                flex-wrap: wrap;
+                max-width: 100%;
+                box-sizing: border-box;
+              }
+              .social-links li {
+                list-style: none;
+                margin: 10px 4px;
+              }
+              .social-links li a {
+                width: 44px;
+                height: 44px;
+                background-color: #fff;
+                text-align: center;
+                line-height: 44px;
+                font-size: 20px;
+                margin: 0;
+                display: block;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                border: 2px solid #fff;
+                z-index: 1;
+                transition: box-shadow 0.3s;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+              }
+              .social-links li a .icon {
+                position: relative;
+                color: #262626;
+                transition: .5s;
+                z-index: 3;
+              }
+              .social-links li a:hover .icon {
+                color: #fff;
+                transform: rotateY(360deg);
+              }
+              .social-links li a:before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #f00;
+                transition: .5s;
+                z-index: 2;
+              }
+              .social-links li a:hover:before {
+                top: 0;
+              }
+              .social-links li:nth-child(1) a:before {
+                background: #333;
+              }
+              .social-links li:nth-child(2) a:before {
+                background: #0077b5;
+              }
+              .social-links li:nth-child(3) a:before {
+                background: #e4405f;
               }
             </style>
           </div>
@@ -593,8 +691,7 @@
 
         <div class="col-lg-6 col-12">
           <div class="contact-form">
-            <h2 class="mb-4">Interested to work together? Let's connect</h2>
-
+            <h3 class="mb-4">Interested to work together? Let's connect</h3>
             <form action="" method="get">
               <div class="row">
                 <div class="col-lg-6 col-12">
@@ -622,7 +719,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer py-5">
+  <footer class="footer py-0">
     <div class="container">
       <div class="row">
 

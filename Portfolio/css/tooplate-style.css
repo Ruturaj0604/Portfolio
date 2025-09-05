@@ -9,8 +9,41 @@ https://www.tooplate.com/view/2115-marvel
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 body {
-  font-family: "Maven Pro", sans-serif;
+font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
+  min-height: 100vh;
+  /* Vibrant animated grainat gradient background */
+  /* Soft, professional animated gradient background */
+  /* Ultra-faint, premium animated gradient background */
+  background: linear-gradient(120deg, #fafdff 0%, #f3f6fd 50%, #fdfcf7 100%);
+  background-size: 200% 200%;
+  animation: gradientBG 18s ease-in-out infinite;
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .full-screen {
@@ -434,13 +467,17 @@ b, strong {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
-background: #474559;
+  background: #474559;
   color: #ffffff;
   border-radius: 50px;
   font-weight: bold;
   border: 0;
   cursor: pointer;
   transition: all 0.4s ease;
+  height: 35px !important;
+  font-size: 14px !important;
+  padding: 4px 10px !important;
+  min-width: 40px;  
 }
 .contact-form .submit-btn:hover {
    background: #ffc200;

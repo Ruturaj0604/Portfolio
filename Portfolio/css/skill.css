@@ -82,8 +82,8 @@
 }
 
 .skill-box:hover .img{
-    transform: translateY(-10px);
-}
+    transform: scale(1.1) translateY(-10px);
+    }
 .skill-title{
     display: flex;
     flex-direction: column;
@@ -118,13 +118,13 @@
     width: 90px;
     height: 100px;
     position: relative;
-    border-radius: 10px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8rem;
-    transform: .5s;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+        transition: transform 0.5s, opacity 0.5s;
 }
 .skill-title h3{
     color: #fff;
